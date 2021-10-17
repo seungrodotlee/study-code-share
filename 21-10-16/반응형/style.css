@@ -1,0 +1,82 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+html {
+  font-size: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+._container {
+  height: 200px;
+  background: skyblue;
+}
+
+/* 모바일우선 */
+._container.mobile-first {
+  width: 300px;
+}
+
+@media (min-width: 640px) {
+  ._container.mobile-first {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  ._container.mobile-first {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  ._container.mobile-first {
+    width: 600px;
+  }
+}
+
+/* 데스크탑우선 */
+._container.desktop-first {
+  width: 600px;
+}
+
+@media (max-width: 1023px) {
+  ._container.desktop-first {
+    width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  ._container.desktop-first {
+    width: 400px;
+  }
+}
+
+@media (max-width: 639px) {
+  ._container.desktop-first {
+    width: 300px;
+  }
+}
+
+/* 컨테이너 바꾸기 */
+._container.in-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  ._container.in-mobile {
+    display: block;
+  }
+
+  ._container.in-desktop {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+body > * {
+  width: 300px;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  border: 1px solid black;
+}

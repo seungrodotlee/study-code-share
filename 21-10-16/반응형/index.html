@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+  </head>
+
+  <body>
+    <h1>모바일 우선</h1>
+    <div class="_container mobile-first"></div>
+    <h1>데스크탑 우선</h1>
+    <div class="_container desktop-first"></div>
+    <h1>TailwindCSS</h1>
+    <div class="_container tailwind w-24 sm:w-32 md:w-40 lg:w-48"></div>
+    <h1>화면에 따라 컨테이너 바꾸기</h1>
+    <div class="_container in-desktop">데스크탑 컨테이너입니다.</div>
+    <div class="_container in-mobile">모바일 컨테이너입니다.</div>
+    <h1>화면에 따라 컨테이너 바꾸기 (TailwindCSS)</h1>
+    <div class="_container hidden md:block">데스크탑 컨테이너입니다.</div>
+    <div class="_container md:hidden">모바일 컨테이너입니다.</div>
+  </body>
+</html>
