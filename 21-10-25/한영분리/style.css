@@ -15,7 +15,7 @@ html, body {
 
 .sizer + p {
   top: 0;
-  transition: transform 1s;
+  transition: transform 1진s;
   transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
 }
 
