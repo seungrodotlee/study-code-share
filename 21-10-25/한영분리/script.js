@@ -1,7 +1,6 @@
 let getTextNodes = () => {
   let nodes = document.querySelectorAll("body *");
   let textNodes = [];
-  //var leafNodes = nodes.filter((el) => !el.hasChildNodes());
   nodes.forEach((el) => {
     if (el.hasChildNodes()) {
       for (let i = 0; i < el.childNodes.length; i++) {
@@ -17,8 +16,6 @@ let getTextNodes = () => {
   return textNodes;
 };
 
-console.log(getTextNodes());
-
 let textNodes = getTextNodes();
 
 textNodes.forEach((t) => {
@@ -28,12 +25,10 @@ textNodes.forEach((t) => {
   let matches = [...t.textContent.matchAll(reg)];
   console.log(matches);
 
-  matches.forEach((m, i) => {
+  matches.forEach((m) => {
     let idx = m.index - prevIdx;
-    let eng = t.splitText(m.index - prevIdx);
+    let eng = t.splitText(idx);
     t = eng.splitText(m[0].length);
-
-    console.log(eng.nodeValue);
 
     let span = document.createElement("span");
     span.classList.add("en");
