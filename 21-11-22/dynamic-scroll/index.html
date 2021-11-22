@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+  </head>
+
+  <body>
+    <div class="w-full h-full bg-gray-100">스크롤</div>
+    <div class="w-full h-full bg-gray-300"></div>
+    <div id="stop-here" class="w-full bg-gray-500" style="height: 400%">
+      <div class="scrolled-section w-1/3 text-2xl">
+        <p class="h-screen">
+          첫번째 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quae, vitae placeat odit laudantium nulla sed possimus, perferendis
+          mollitia deleniti ut ea sint magnam impedit? Eius consectetur earum
+          iure? Facilis, doloremque.
+        </p>
+        <p class="h-screen">
+          두번째 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quae, vitae placeat odit laudantium nulla sed possimus, perferendis
+          mollitia deleniti ut ea sint magnam impedit? Eius consectetur earum
+          iure? Facilis, doloremque.
+        </p>
+        <p class="h-screen">
+          세번째 내용 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quae, vitae placeat odit laudantium nulla sed possimus, perferendis
+          mollitia deleniti ut ea sint magnam impedit? Eius consectetur earum
+          iure? Facilis, doloremque.
+        </p>
+        <div
+          id="fixed-section"
+          class="fixed font-black text-5xl top-0 left-1/2 w-1/2"
+        >
+          <div class="h-screen absolute top-0 w-full">
+            첫번째 가만히 있는 요소
+          </div>
+          <div class="h-screen absolute top-0 w-full">
+            두번째 가만히 있는 요소
+          </div>
+          <div class="h-screen absolute top-0 w-full">
+            세번째 가만히 있는 요소
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-full bg-gray-700"></div>
+  </body>
+</html>
