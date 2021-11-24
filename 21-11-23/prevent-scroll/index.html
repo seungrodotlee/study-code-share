@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+  </head>
+
+  <body>
+    <div class="w-full h-full bg-gray-100">스크롤</div>
+    <div class="h-full bg-gray-300 py-6 flex overflow-hidden">
+      <div
+        class="slider flex justify-start items-center transform duration-500"
+      >
+        <div class="item w-screen h-full px-6 flex-shrink-0">
+          <div class="w-full h-full bg-blue-600"></div>
+        </div>
+        <div class="item w-screen h-full px-6 flex-shrink-0">
+          <div class="w-full h-full bg-blue-600"></div>
+        </div>
+        <div class="item w-screen h-full px-6 flex-shrink-0">
+          <div class="w-full h-full bg-blue-600"></div>
+        </div>
+        <div class="item w-screen h-full px-6 flex-shrink-0">
+          <div class="w-full h-full bg-blue-600"></div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-full bg-gray-500"></div>
+    <div class="fixed console top-8 left-8"></div>
+  </body>
+</html>

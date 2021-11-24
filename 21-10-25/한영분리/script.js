@@ -18,17 +18,18 @@ let getTextNodes = () => {
 
 let textNodes = getTextNodes();
 
+console.log(textNodes);
 textNodes.forEach((t) => {
   let reg = new RegExp("[a-zA-Z]+", "g");
   let prevIdx = 0;
 
   let matches = [...t.textContent.matchAll(reg)];
-  console.log(matches);
 
   matches.forEach((m) => {
     let idx = m.index - prevIdx;
     let eng = t.splitText(idx);
     t = eng.splitText(m[0].length);
+    console.log("eng", eng);
 
     let span = document.createElement("span");
     span.classList.add("en");
